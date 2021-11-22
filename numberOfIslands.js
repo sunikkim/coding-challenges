@@ -20,7 +20,7 @@ E none
 basic idea: islands are contiguous "areas" of adjacent 1s. make recursive search helper function. keep track of visited locations with hash table and iterate through grid. if grid value is 1, increment counter by 1 and search in every direction from the value.
 */
 
-var numIslands = function(grid) {
+const numIslands = (grid) => {
   let count = 0;
   const maxHeight = grid.length;
   const maxWidth = grid[0].length;
