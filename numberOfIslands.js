@@ -17,7 +17,24 @@ I grid of land and water
 C none
 E none
 
+find "edges" of island and going from there...so wherever there is a 1 with an adjacent 0 (or out of bound)
+
 basic idea: islands are contiguous "areas" of adjacent 1s. make recursive search helper function. keep track of visited locations with hash table and iterate through grid. if grid value is 1, increment counter by 1 and search in every direction from the value.
+
+make counter = 0
+make dfs function (that searches in every direction from a given node)
+iterate through grid
+if grid[i][j] = 1
+counter++
+dfs on that node, mark every visited node '0'
+return counter
+
+M = # of rows
+N = # of columns
+
+O(M x N) time complexity
+O(min(M, N)) space complexity
+
 */
 
 const numIslands = (grid) => {
