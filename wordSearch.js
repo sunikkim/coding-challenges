@@ -27,9 +27,9 @@ O(L) space complexity
 
 */
 
-var exist = function(board, word) {
-  let maxWidth = board[0].length - 1;
-  let maxHeight = board.length - 1;
+const exist = (board, word) => {
+  const maxWidth = board[0].length - 1;
+  const maxHeight = board.length - 1;
 
   const recurse = function(i, j, index) {
       if (word.length === index) {
