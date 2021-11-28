@@ -4,6 +4,11 @@ Given an m x n grid of characters board and a string word, return true if word e
 
 The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.
 
+O boolean if word exists in grid
+I m x n grid of characters and target string
+C word can be constructed from letters of seqeuentially adjacent cells. same letter cell may not be used more than once
+E none
+
 m = board.length
 n = board[i].length
 1 <= m, n <= 6
