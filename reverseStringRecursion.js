@@ -1,6 +1,8 @@
 /*
 snippet to test my grasp of basic recursion concepts. reverses string using recursion (very inefficient + not the best approach for reversing a string in the real world)
 
+O(n) time and space complexity
+
 */
 
 const reverse = (str) => {
