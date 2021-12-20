@@ -7,7 +7,40 @@ Return true if there is a cycle in the linked list. Otherwise, return false.
 
 */
 
-// overwriting approach (ideal approach uses tortoise + hare algorithm)
+// ideal approach (tortoise and hare algorithm)
+const hasCycle = (head) => {
+  if (!head) {
+      return false;
+  }
+
+  let slow = head;
+  let fast = head.next;
+
+  while (slow !== fast) {
+    if (!fast || !fast.next) {
+      return false;
+    }
+
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+
+  return true;
+};
+
+
+/*
+initialize two pointers
+set one pointer to move twice as fast
+iterate through list with both pointers
+if both pointers ever point at same node, there is a cycle
+return true
+if slow node reaches end and no overlap
+return false
+
+*/
+
+// overwriting approach
 const hasCycle = (head) => {
   let node = head;
 
