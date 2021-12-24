@@ -19,8 +19,6 @@ O(n) time
 O(1) space
 */
 
-
-
 const maxSubArray = (nums) => {
   let max = nums[0];
   let curr = nums[0];
